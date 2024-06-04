@@ -1,6 +1,7 @@
 function setup() {
   createCanvas(400, 400);
   y = width/2;
+  radius = 400;
   velY=0;
   posY=0;
   background(220);
@@ -15,12 +16,13 @@ function physics(y) {
 
 function mouseClicked(){
   y -= 50;
+  radius -= 10;
 }
 
 function draw() {
   //background(220);
   noStroke()
-  ellipse(200, physics(y), 50, 50);
+  ellipse(200, physics(y), radius, radius);
     fill(physics(y),100,50)
   
 }
