@@ -7,19 +7,20 @@ function setup() {
 }
 
 function physics(y) {
-  accY = random(-10,10);
+  accY = 1;
   velY += accY;
   posY = y+velY;
   return (posY)
 }
 
-function bounce(y) {
-  if (y > width) {
-    y = width/2
-  }
+function mouseClicked(){
+  y -= 50;
 }
 
 function draw() {
   //background(220);
+  noStroke()
   ellipse(200, physics(y), 50, 50);
+    fill(physics(y),100,50)
+  
 }
