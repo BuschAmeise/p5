@@ -3,10 +3,11 @@ function setup() {
   y = width/2;
   velY=0;
   posY=0;
+  background(220);
 }
 
 function physics(y) {
-  accY = random(-1,1);
+  accY = random(-10,10);
   velY += accY;
   posY = y+velY;
   return (posY)
@@ -19,6 +20,6 @@ function bounce(y) {
 }
 
 function draw() {
-  background(220);
+  //background(220);
   ellipse(200, physics(y), 50, 50);
 }
