@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js Sketch</title>
+  <!-- Einbindung der p5.js Bibliothek -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+  <!-- Dein p5.js Sketch wird in diesem div angezeigt -->
+  <div id="sketch-container"></div>
+  <!-- Einbindung deiner p5.js Datei -->
+  <script src="sketch.js"></script>
+</body>
+</html>
