@@ -1,11 +1,11 @@
 let sharks = [];
 let numbersOfSharks = 20;
 let food = [];
-let numberoffood = 20;
+let numberoffood = 40;
 var debug
 
 function setup() {
-  createCanvas(720, 720);
+  createCanvas(1080, 720);
   
   for (let i = 0; i < numbersOfSharks; i++) {
     sharks[i] = new predator();
